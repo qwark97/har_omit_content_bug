@@ -4,4 +4,4 @@ WORKDIR /app
 VOLUME /app
 COPY --chown=pwuser:pwuser . /app/
 
-RUN chown pwuser:pwuser . && pip install playwright
+RUN chown pwuser:pwuser . && pip install playwright==1.15.3
